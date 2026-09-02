@@ -8,7 +8,7 @@ import pandas as pd
 # --- CONFIGURACIÓN DE CONTRASEÑA ---
 def check_password():
     def password_entered():
-        if st.session_state["password"] == "ComerMay#2026@":
+        if st.session_state["password"] == "MayCom#2026@"
             st.session_state["password_correct"] = True
             del st.session_state["password"]  
         else:
