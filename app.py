@@ -8,7 +8,7 @@ import pandas as pd
 # --- CONFIGURACIÓN DE CONTRASEÑA ---
 def check_password():
     def password_entered():
-        if st.session_state["password"] == "MayCom#2026@"
+        if st.session_state["password"] == st.secrets["MayCom#2026@"]
             st.session_state["password_correct"] = True
             del st.session_state["password"]  
         else:
@@ -30,8 +30,8 @@ if not check_password():
     st.stop()
 
 # --- CONFIGURACIÓN DE SUPABASE ---
-SUPABASE_URL = "https://ayygjsjqrefsbvrkpugc.supabase.co"
-SUPABASE_KEY = "sb_publishable_8iDkihdWEY_aLkHrH1VOKg_IulmvtTj"
+SUPABASE_URL = st.secrets["https://ayygjsjqrefsbvrkpugc.supabase.co"]
+SUPABASE_KEY = st.secrets["sb_publishable_8iDkihdWEY_aLkHrH1VOKg_IulmvtTj"]
 BUCKET_NAME = "documentos" 
 
 @st.cache_resource
