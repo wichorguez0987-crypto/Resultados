@@ -213,9 +213,6 @@ if archivos_filtrados:
         if st.button("Cerrar Consulta"):
             del st.session_state["archivo_activo"]
             st.rerun()
+            
 else:
     st.info("No hay archivos que coincidan con los filtros seleccionados.")
-    col_e.markdown(f"[📥 Descargar Archivo]({row['url_archivo']})")
-    st.divider()
-if else:
-    st.info("No hay reportes que coincidan con los filtros seleccionados o la base de datos está vacía.")
