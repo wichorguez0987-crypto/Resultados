@@ -216,6 +216,6 @@ if archivos_filtrados:
 else:
     st.info("No hay archivos que coincidan con los filtros seleccionados.")
     col_e.markdown(f"[📥 Descargar Archivo]({row['url_archivo']})")
-        st.divider()
+    st.divider()
 else:
     st.info("No hay reportes que coincidan con los filtros seleccionados o la base de datos está vacía.")
