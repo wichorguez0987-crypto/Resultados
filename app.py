@@ -49,7 +49,7 @@ with st.sidebar:
     sucursal_input = st.selectbox("Sucursal", ["Sucursal 01", "Sucursal 02", "Almacén Central"])
     fecha_input = st.date_input("Fecha del Reporte", datetime.today())
     motivo_input = st.text_input("Motivo / Descripción", placeholder="Ej. Inventario, mermas...")
-    archivo = st.file_uploader("Selecciona tu archivo", type=["pdf", "xlsx", "csv", "zip"])
+    archivo = st.file_uploader("Selecciona tu archivo", type=["pdf", "xlsx", "csv", "zip", "doc", "docx"])
     
     if st.button("Subir a la Nube") and archivo:
         if not motivo_input.strip():
