@@ -46,7 +46,7 @@ st.title("📂 Gestor Cloud y Consulta de Reportes")
 # --- SECCIÓN 1: SUBIR ARCHIVOS ---
 with st.sidebar:
     st.header("Subir Nuevo Archivo")
-    sucursal_input = st.selectbox("Sucursal", ["Sucursal 01", "Sucursal 02", "Almacén Central"])
+    sucursal_input = st.selectbox("Sucursal", ["Sucursal 01", "Sucursal 02", "Sucursal 03", "Sucursal 04", "Sucursal 05", "Sucursal 07", "Sucursal 08", "Sucursal 09", "Sucursal 10", "Sucursal 11", "Sucursal 12"])
     fecha_input = st.date_input("Fecha del Reporte", datetime.today())
     motivo_input = st.text_input("Motivo / Descripción", placeholder="Ej. Inventario, mermas...")
     archivo = st.file_uploader("Selecciona tu archivo", type=["pdf", "xlsx", "csv", "zip", "doc", "docx"])
